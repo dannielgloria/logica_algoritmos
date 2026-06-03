@@ -70,3 +70,35 @@ const sumaTotal = numeros4.reduce((acumulador, numero) => acumulador + numero, 0
 const promedio = sumaTotal / numeros4.length;
 console.log("Total: " + sumaTotal);
 console.log("Promedio: " + promedio);
+
+
+const correos = new Set();
+
+correos.add("ana@email.com");
+correos.add("luis@email.com");
+correos.add("ana@email.com");
+correos.add("ana@email.com");
+correos.add("ana@email.com");
+
+console.log(correos);
+
+
+// Map() no es igual a arreglo.map()
+// Map() es una estructura de datos que almacena pares clave-valor, donde cada clave es única.
+// arreglo.map() es un método de los arreglos que se utiliza para transformar cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de la transformación.
+
+const usuariosPorId = new Map();
+
+usuariosPorId.set(1, "Ana");
+usuariosPorId.set(2, "Luis");
+
+console.log(usuariosPorId.get(1)); // Devuelve "Ana"
+
+
+const preciosPorProducto = {
+  mouse: 300,
+  teclado: 700,
+  monitor: 2500
+};
+
+console.log(preciosPorProducto.monitor);
